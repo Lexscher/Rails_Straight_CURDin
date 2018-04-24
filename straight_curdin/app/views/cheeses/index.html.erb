@@ -1,0 +1,7 @@
+<h1>The Great Hall of Cheeses!</h1>
+
+<button><%= link_to 'Craft some new cheese!', 'cheeses/new' %></button>
+<% @cheeses.each do |cheese| %>
+ <h2><%= cheese.name %></h2>
+ <button><%= link_to 'Look it!', cheese_path(cheese) %></button>
+ <% end %>

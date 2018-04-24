@@ -1,0 +1,7 @@
+<h2>edit the cheese</h2>
+
+<%= render partial: "form" %>
+
+<%= form_with model: @planet, html: {method: "delete"} do |f|%>
+  <%= f.submit "X Time to Cut the Cheese X" %>
+<% end %>

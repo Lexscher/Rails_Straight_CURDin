@@ -1,0 +1,8 @@
+<h1><%= @cheese.name %></h1>
+<h4> Made with <%= @cheese.milk_type %> milk! </h4>
+<img src="<%= @cheese.image_url %>" alt="<%= @cheese.name %>" />
+
+<h4><%= @cheese.description %></h4>
+
+<button><%= link_to 'edit', "/cheeses/#{@cheese.id}/edit"%></button>
+<button><%= link_to 'Let us go back to le hall of cheeses!', cheeses_path %></button>
