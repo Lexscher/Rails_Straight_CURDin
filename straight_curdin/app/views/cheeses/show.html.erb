@@ -4,5 +4,7 @@
 
 <h4><%= @cheese.description %></h4>
 
+<h2><%= @cheese.stank_level %></h2>
+
 <button><%= link_to 'edit', "/cheeses/#{@cheese.id}/edit"%></button>
 <button><%= link_to 'Let us go back to le hall of cheeses!', cheeses_path %></button>
