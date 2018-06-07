@@ -1,45 +1,63 @@
+# Hi all!
+
+This was one of my homework assignments from unit 4. I had a lot of fun with this one!
+
+---
+
+##### Thank you for taking an interest in my code.
+
+### Best,
+
+## Alexander
+
+---
+
+## You'll find the instructions/guidelines below 😁
+
 # HOMEWORK: Straight CURDin'
 
 ![image](https://media.giphy.com/media/332SpoiZo7ToI/giphy.gif)
 
-You all already know how to CRUD. Tonight, you learn to *CURD* (takes off sunglasses).
+You all already know how to CRUD. Tonight, you learn to _CURD_ (takes off sunglasses).
 
 ## Completion
 
-Please finish through __Part 8__. As always: more is cheddar; gourmet is betta.
+Please finish through **Part 8**. As always: more is cheddar; gourmet is betta.
 
 ## Part 1: Setup
 
-- Create a rails app named straight_curdin EX:
+*   Create a rails app named straight_curdin EX:
+
 ```bash
 rails new straight_curdin -G --database=postgresql
 ```
-- Make your initial commit! (This way every commit after will include only the code that you write.)
-- You'll have one table: cheeses 
-- You'll have one model: Cheese
-   - Refer to the [cheese object](./straight_curdin_seeds.rb) to see what columns need to be in your tables
-    > Use that file to populate your seed.rb file
-- Run through the rest of the neccessary steps for migrations
-- Use the [cheese object](./straight_curdin_seeds.rb) to set up your seed file!
-- Now in your `config/routes.rb` file, call the `resource` method to auto generate all of your cheese resource routes. You're now ready to start CURD'in.
+
+*   Make your initial commit! (This way every commit after will include only the code that you write.)
+*   You'll have one table: cheeses
+*   You'll have one model: Cheese
+    *   Refer to the [cheese object](./straight_curdin_seeds.rb) to see what columns need to be in your tables
+        > Use that file to populate your seed.rb file
+*   Run through the rest of the neccessary steps for migrations
+*   Use the [cheese object](./straight_curdin_seeds.rb) to set up your seed file!
+*   Now in your `config/routes.rb` file, call the `resource` method to auto generate all of your cheese resource routes. You're now ready to start CURD'in.
 
 ## Part 2: The Great Hall of Cheeses
 
 Fulfill the following specification:
 
-- GET requests to '/' should forward to `/cheeses`, and should have a heading that says, "The Great Hall of Cheeses", followed by an unordered list of links to cheeses, i.e. `/cheeses/1`, `/cheeses/2`, `/cheeses/3`, and so on.
+*   GET requests to '/' should forward to `/cheeses`, and should have a heading that says, "The Great Hall of Cheeses", followed by an unordered list of links to cheeses, i.e. `/cheeses/1`, `/cheeses/2`, `/cheeses/3`, and so on.
 
 ## Part 3: "One Cheese at a Time, Bruh!"
 
-- GET requests to `/cheeses/1` should display the `name`, `milk_type`, `description`, and image (via `image_url`) of the cheese with the id of 1, while GET requests to `/cheeses/7` should display the information of the cheese with the id of 7.
+*   GET requests to `/cheeses/1` should display the `name`, `milk_type`, `description`, and image (via `image_url`) of the cheese with the id of 1, while GET requests to `/cheeses/7` should display the information of the cheese with the id of 7.
 
 ## Part 4: Putting the C in "CURD"
 
 Fulfill the following specification:
 
-- GET requests to `/cheeses/new` should take the visitor to a form for creating a new cheese.
-- When the user submits the form, a new cheese is created in the database, and the user is redirected to The Great Hall of Cheeses. If all has gone according to plan, the newly created cheese should will show up in the list.
-- Use form helpers to generate your forms
+*   GET requests to `/cheeses/new` should take the visitor to a form for creating a new cheese.
+*   When the user submits the form, a new cheese is created in the database, and the user is redirected to The Great Hall of Cheeses. If all has gone according to plan, the newly created cheese should will show up in the list.
+*   Use form helpers to generate your forms
 
 ## Part 5: Eat the Cheese, You Fool
 
@@ -88,19 +106,19 @@ Style the pages!
 
 Add the following methods to the `Cheese` model:
 
-- .cow? - returns true if the cheese is from cow milk, false otherwise
-- .goat? - returns true if the cheese is from goat milk, false otherwise
-- .stanky? - returns true if stank_level is above 4, false otherwise
+*   .cow? - returns true if the cheese is from cow milk, false otherwise
+*   .goat? - returns true if the cheese is from goat milk, false otherwise
+*   .stanky? - returns true if stank_level is above 4, false otherwise
 
 ## 🚀 Completion looks like:
 
-- You have a Rails app in this repo
-    - **REMEMBER**: Initialize your rails app using `rails new straight_curdin -G --database=postgresql`.
-- Your rails app has all the requirements up to and including Part 8
+*   You have a Rails app in this repo
+    *   **REMEMBER**: Initialize your rails app using `rails new straight_curdin -G --database=postgresql`.
+*   Your rails app has all the requirements up to and including Part 8
 
 ## 🚀 Your homework submission should include:
 
-- A pull request created on _this repo_.
-- Completion, comfort, wins, losses, questions... you know the drill.
+*   A pull request created on _this repo_.
+*   Completion, comfort, wins, losses, questions... you know the drill.
 
 ## This homework is due 🚨 11PM ON MONDAY NIGHT 🚨
